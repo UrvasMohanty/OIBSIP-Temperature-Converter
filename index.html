@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+
+    <div class="converter">
+      <div class="input-group">
+        <label for="temperature">Temperature Value</label>
+        <input type="number" id="temperature" placeholder="Enter temperature"/>
+      </div>
+
+      <div class="input-group">
+        <label for="from-unit">From Unit</label>
+        <select id="from-unit">
+          <option value="celsius">Celsius (°C)</option>
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="to-unit">To Unit</label>
+        <select id="to-unit">
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="celsius">Celsius (°C)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+
+      <button class="btn" id="convert-btn">Convert</button>
+
+      <div class="result" id="result">
+        Result will appear here
+      </div>
+    </div>
+
+    <div class="unit-info">
+      <h3>About Temperature Units</h3>
+      <p><strong>°C (Celsius):</strong> Freezes at 0°C, boils at 100°C.</p>
+      <p><strong>°F (Fahrenheit):</strong> Freezes at 32°F, boils at 212°F.</p>
+      <p><strong>K (Kelvin):</strong> Starts at absolute zero (0K).</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
